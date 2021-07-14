@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+} 
+/* banner section start here */
+.banner{
+    width: 100%;
+    height: 600px;
+    background: #2D25A0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 90px;
+}
+.banner-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.banner-info{
+    margin-top: 100px;
+    font-size: 57px;
+    font-weight: bold;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 150px;
+}
+.banner-info h4{
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.banner-info button{
+    text-decoration: none;
+    padding: 14px;
+    background: #E02C6D;
+    color: white;
+    width: 141px;
+    border: none;
+}
+
+.banner-info button:hover{
+    transition: transform 0.7s ease-in-out,width 0.7s;
+    transform: scale(1.4) translateX(20px);
+    width: 260px;
+    background: #ce3c71;
+}
+.banner-info button a{
+    text-decoration: none;
+    color: white;
+}
+.banner-info span{
+    margin-left: 10px;
+}
+.banner-img img{
+    width: 560px;
+    height: 440px;
+    margin-top: 70px;
+}
+/* player section start here */
+.contact-with-us{
+    width: 12%;
+    background: red;
+    opacity: 0.7;
+    top: 550px;
+    color: white;
+    position: fixed;
+    padding: 0px 10px;
+    z-index: 1;
+    left: 85%;
+    border-radius: 5px;
+    transition: transform 1s ease-in-out;
+    font-size: 20px;
+}
+.contact-with-us:hover{
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+    transform:scale(1.1) translateY(-15px);
+}
+/* message section */
+.container{
+    width: 1100px;
+    margin:0px auto;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.player{
+    width: 330px;
+    height: 475px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.player-img img{
+    width: 300px;
+    height: 260px;
+}
+.player-details{
+    width: 300px;
+    height: 155px;
+}
+.player-details h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #18191F;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+.player-details p{
+    font-size: 15px;
+    color: #6C6C6C;
+    font-family: 'Poppins', sans-serif;
+    line-height: 26px;
+}
+/* table section style start here */
+.table-section{
+    margin-bottom: 50px;
+    background-color:#D62AD0;
+    font-family: 'Roboto', sans-serif;
+}
+.table-video-wrap{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+}
+.table-details h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid rgb(24, 23, 23);
+    padding: 5px 15px;
+    text-align: center;
+    color: white;
+}
+.short-video{
+    width:550px;
+     height:400px;
+}
+/* Footer section strat here */
+.footer-container{
+    margin-bottom: 50px;
+}
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width:475px;
+}
+.logo img{
+    width: 470px;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+}
+.icon:hover{
+    background: rgb(238, 98, 98);
+}
+.footer-details p{
+    font-size: 16px;
+    color: #000000;
+    width: 232px;
+    text-align: center;
+}
+/* -------------------------
+   media query start here
+ --------------------------- */
+ @media only screen and (max-width:688px) {
+
+    .banner-details,.players,.table-video-wrap{
+         grid-template-columns: repeat(1,1fr);
+    }
+    .banner-info{
+        margin-top: 15px;
+        font-size: 30px;
+        line-height: 0px;
+        width: 280px;
+        height: 200px;
+        margin-left: 16px;
+     }
+     .banner-info button:hover{
+         width: 180px;
+         transform: scale(1.2) translateX(10px);
+     }
+    .banner-img img{
+        width: 330px;
+        height: 260px;
+        position: absolute;
+        left: 22px;
+        top: 230px;
+    }
+    .container{
+        width: 100%;
+    }
+    .player{
+        width: 100%;
+    }
+    .table-section{
+        overflow: hidden;
+    }
+    .table-video-wrap{
+        width: 100%;
+    }
+    .table-details{
+        width: 74.55%;
+        margin-bottom: 50px;
+    }
+    .table-details h2{
+        font-size: 30px;
+        margin-left: 0%;
+    }
+    .short-video{
+        width: 100%;
+    }
+    .contact-with-us{
+        left: 70%;
+        width: 20%;
+        transition: transform 1s ease-in-out;
+        font-size: 13px;
+    }
+    .contact-with-us:hover{
+        transform:scale(1.05) translateY(-2px);
+
+    }
+    .logo{
+        width:275px;
+    }
+    .logo img{
+        width: 270px;
+    }
+    .icons{
+        width: 170px;
+        text-align: center;
+    }
+    .footer-details p{
+        width: 240px;
+        text-align: center;
+    }
+     
+ }
+ /* ----------------
+     for tablet view
+     --------------- */
+     @media only screen and (min-width:689px) and (max-width:992px){
+        
+        .banner{
+            width: 100;
+        }
+        .banner-info{
+            margin-top: 100px;
+            font-size: 20px;
+            line-height: 0px;
+            margin-left: 30px;
+        }
+        .banner-info h4{
+            margin-top:0;
+        }
+        .banner-img{
+            overflow: hidden;
+        }
+        .banner-img img{
+            width:50%;
+            height: auto;
+            position: absolute;
+            left: 422px;
+            top: 30px;
+        }
+        .container{
+            width:100%;
+        }
+        .players{
+            grid-template-columns: repeat(2,1fr);
+            margin-left:55px;
+        }
+        .contact-with-us{
+            left: 77%;
+            width: 12%;
+            transition: transform 1s ease-in-out;
+            font-size: 13px;
+        }
+        .contact-with-us:hover{
+            transform:scale(1.1) translateY(-10px);
+        }
+       .table-video-wrap{
+           width: 100%;
+       }
+       .table-details{
+           width: 90%;
+       }
+       td,th{
+        border: 1px solid rgb(24, 23, 23);
+        padding: 1px 1px;
+    }
+    .short-video{
+        width: 100%;
+        height: px;
+    }
+    .logo{
+        width:275px;
+    }
+    .logo img{
+        width: 350px;
+    }
+    .icons{
+        width: 340px;
+        text-align: center ;
+    }
+    .footer-details p{
+        width: 320px;
+        text-align: center;
+    }
+     } 
